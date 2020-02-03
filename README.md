@@ -33,6 +33,9 @@ select_file[0:3]
 #count of selection
 select_file.iloc[:3].count()
 
+#sort the data according to prefered field
+selct_file.sort_values(by='firstname', ascending=True )
+
 
 
 
