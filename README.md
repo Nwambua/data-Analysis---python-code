@@ -3,7 +3,6 @@ Accessing and manipulation files
 import pandas as pd
 #import numpy as np
 
-
 #Identify file location/directory 
 import os
 directory = os.getcwd()
@@ -35,6 +34,12 @@ select_file.iloc[:3].count()
 
 #sort the data according to prefered field
 selct_file.sort_values(by='firstname', ascending=True )
+
+#filter with apply function for specific data sets 
+resolved = dfile.apply(lambda x: x[0])
+
+#use axis to get row values/inputs in index three
+resolved = dfile.apply(lambda x:x[3], axis=1 )
 
 
 
