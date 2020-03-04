@@ -47,3 +47,7 @@ No_unique = dfile[:10000].groupby('Field_Name')
 #Display first few head
 No_unique.head()
 
+#multiple grouping with values !> 20000 get the first few rows
+multiple_group = dfile[:20000].groupby(['field_name1','field_name2'])
+multiple_group.first()
+
