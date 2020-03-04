@@ -41,6 +41,9 @@ resolved = dfile.apply(lambda x: x[0])
 #use axis to get row values/inputs in index three
 resolved = dfile.apply(lambda x:x[3], axis=1 )
 
+#Grouped by field name with records !>10000
+No_unique = dfile[:10000].groupby('Field_Name')
 
-
+#Display first few head
+No_unique.head()
 
