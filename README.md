@@ -52,3 +52,5 @@ No_unique.head()
 multiple_group = dfile[:20000].groupby(['field_name1','field_name2'])
 multiple_group.first()
 
+#get unique number of items in a column 
+df['ColumnN'].nunique()
